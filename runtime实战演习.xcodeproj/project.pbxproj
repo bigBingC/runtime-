@@ -15,6 +15,8 @@
 		2244B16D1D227FC3006F58C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2244B16B1D227FC3006F58C6 /* LaunchScreen.storyboard */; };
 		2244B1781D227FC3006F58C6 /* runtime____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2244B1771D227FC3006F58C6 /* runtime____Tests.m */; };
 		2244B1831D227FC3006F58C6 /* runtime____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2244B1821D227FC3006F58C6 /* runtime____UITests.m */; };
+		2244B1921D227FF2006F58C6 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 2244B1911D227FF2006F58C6 /* Person.m */; };
+		2244B1951D2291E9006F58C6 /* Person+PersonCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2244B1941D2291E9006F58C6 /* Person+PersonCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		2244B17E1D227FC3006F58C6 /* runtime实战演习UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "runtime实战演习UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2244B1821D227FC3006F58C6 /* runtime____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "runtime____UITests.m"; sourceTree = "<group>"; };
 		2244B1841D227FC3006F58C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2244B1901D227FF2006F58C6 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		2244B1911D227FF2006F58C6 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		2244B1931D2291E9006F58C6 /* Person+PersonCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+PersonCategory.h"; sourceTree = "<group>"; };
+		2244B1941D2291E9006F58C6 /* Person+PersonCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+PersonCategory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,8 @@
 		2244B1511D227FC3006F58C6 = {
 			isa = PBXGroup;
 			children = (
+				2244B1931D2291E9006F58C6 /* Person+PersonCategory.h */,
+				2244B1941D2291E9006F58C6 /* Person+PersonCategory.m */,
 				2244B15C1D227FC3006F58C6 /* runtime实战演习 */,
 				2244B1761D227FC3006F58C6 /* runtime实战演习Tests */,
 				2244B1811D227FC3006F58C6 /* runtime实战演习UITests */,
@@ -105,6 +113,8 @@
 				2244B1611D227FC3006F58C6 /* AppDelegate.m */,
 				2244B1631D227FC3006F58C6 /* ViewController.h */,
 				2244B1641D227FC3006F58C6 /* ViewController.m */,
+				2244B1901D227FF2006F58C6 /* Person.h */,
+				2244B1911D227FF2006F58C6 /* Person.m */,
 				2244B1661D227FC3006F58C6 /* Main.storyboard */,
 				2244B1691D227FC3006F58C6 /* Assets.xcassets */,
 				2244B16B1D227FC3006F58C6 /* LaunchScreen.storyboard */,
@@ -272,6 +282,8 @@
 			files = (
 				2244B1651D227FC3006F58C6 /* ViewController.m in Sources */,
 				2244B1621D227FC3006F58C6 /* AppDelegate.m in Sources */,
+				2244B1921D227FF2006F58C6 /* Person.m in Sources */,
+				2244B1951D2291E9006F58C6 /* Person+PersonCategory.m in Sources */,
 				2244B15F1D227FC3006F58C6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

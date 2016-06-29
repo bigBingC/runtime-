@@ -1,25 +1,86 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XoU-id-lCD">
+                                <rect key="frame" x="142" y="78" width="90" height="30"/>
+                                <state key="normal" title="获取所有变量"/>
+                                <connections>
+                                    <action selector="getAllVariable:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6DB-33-hUm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFC-G1-Dcm">
+                                <rect key="frame" x="142" y="133" width="90" height="30"/>
+                                <state key="normal" title="获取所有方法"/>
+                                <connections>
+                                    <action selector="getAllMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5RQ-TO-Kur"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0d-qB-ofE">
+                                <rect key="frame" x="104" y="187" width="166" height="30"/>
+                                <state key="normal" title="改变私有变量 name 的值"/>
+                                <connections>
+                                    <action selector="changeVariable:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KNe-WC-eSG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NI3-aE-ONC">
+                                <rect key="frame" x="135" y="233" width="105" height="30"/>
+                                <state key="normal" title="添加一个新属性"/>
+                                <connections>
+                                    <action selector="addVarible:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gwK-7B-6qu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REs-Wn-gan">
+                                <rect key="frame" x="135" y="279" width="105" height="30"/>
+                                <state key="normal" title="添加一个新方法"/>
+                                <connections>
+                                    <action selector="addMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TSH-Vq-8to"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1U-Pv-9Ce">
+                                <rect key="frame" x="120" y="327" width="135" height="30"/>
+                                <state key="normal" title="交换两个方法的功能"/>
+                                <connections>
+                                    <action selector="replaceMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xcf-se-xY3"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M1U-Pv-9Ce" firstAttribute="top" secondItem="REs-Wn-gan" secondAttribute="bottom" constant="18" id="0FD-Vw-mFD"/>
+                            <constraint firstItem="NI3-aE-ONC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9cU-aH-Q7j"/>
+                            <constraint firstItem="c0d-qB-ofE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BJH-7W-kGT"/>
+                            <constraint firstItem="XoU-id-lCD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FPu-9W-P4a"/>
+                            <constraint firstItem="c0d-qB-ofE" firstAttribute="top" secondItem="jFC-G1-Dcm" secondAttribute="bottom" constant="24" id="KBB-5E-gF3"/>
+                            <constraint firstItem="XoU-id-lCD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="58" id="MLb-Tf-tCN"/>
+                            <constraint firstItem="jFC-G1-Dcm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ps9-zV-uth"/>
+                            <constraint firstItem="REs-Wn-gan" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tlh-qc-O4y"/>
+                            <constraint firstItem="M1U-Pv-9Ce" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mwE-k7-YHt"/>
+                            <constraint firstItem="jFC-G1-Dcm" firstAttribute="top" secondItem="XoU-id-lCD" secondAttribute="bottom" constant="25" id="r6c-dI-h8U"/>
+                            <constraint firstItem="REs-Wn-gan" firstAttribute="top" secondItem="NI3-aE-ONC" secondAttribute="bottom" constant="16" id="vhF-jl-fV9"/>
+                            <constraint firstItem="NI3-aE-ONC" firstAttribute="top" secondItem="c0d-qB-ofE" secondAttribute="bottom" constant="16" id="vpj-GK-8nH"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="340" y="429"/>
         </scene>
     </scenes>
 </document>
